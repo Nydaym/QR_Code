@@ -1,0 +1,79 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Reference from https://github.com/vinibleik/qr-code-component.git - A more modern approach */
+
+:root {
+    /* 颜色变量 */
+    --clr-slate-900: hsl(218, 44%, 22%);
+    --clr-slate-500: hsl(216, 15%, 48%);
+    --clr-slate-300: hsl(212, 45%, 89%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* 字体变量 */
+    --ff-outfit: 'Outfit', sans-serif;
+
+    /* Text Preset 1 - Bold */
+    --tp1-size: 22px;
+    --tp1-line-height: 1.2;
+    --tp1-spacing: 0px;
+    --tp1-weight: bold;
+
+    /* Text Preset 2 - Regular */
+    --tp2-size: 15px;
+    --tp2-line-height: 1.4;
+    --tp2-spacing: 0.2px;
+    --tp2-weight: regular;
+
+    --space-500: 40px;
+    --space-300: 24px;
+    --space-200: 16px;
+}
+
+body{
+    background-color: var(--clr-slate-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.qr-code{
+    background-color: var(--clr-white);  
+    width: 320px;
+    height: 499px;
+    border-radius: 20px;
+    padding: var(--space-200);
+    padding-bottom: var(--space-500);
+}
+
+.qr-code .qr-code-image img{
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.qr-code .qr-code-image {
+    margin-bottom: var(--space-300); 
+}
+
+.qr-code .qr-code-text{
+    font-family: var(--ff-outfit);
+    text-align: center;
+    padding-left:  var(--space-200);
+    padding-right:  var(--space-200);
+}
+
+.qr-code .qr-code-text .qr-code-text-title{
+    font-size: var(--tp1-size);
+    line-height: var(--tp1-line-height);
+    letter-spacing: var(--tp1-spacing);
+    font-weight: var(--tp1-weight);
+}
+
+.qr-code .qr-code-text .qr-code-text-description{
+    font-size: var(--tp2-size);
+    line-height: var(--tp2-line-height);
+    letter-spacing: var(--tp2-spacing);
+    font-weight: var(--tp2-weight);
+}
+
