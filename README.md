@@ -1,87 +1,108 @@
-# Frontend Mentor - QR code component
+# Frontend Mentor - QR code component solution
 
-![Design preview for the QR code component coding challenge](./preview.jpg)
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### Screenshot
 
-## The challenge
+![](./images/MyPreview.png)
 
-Your challenge is to build out this QR code component and get it looking as close to the design as possible.
+## My process
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### Built with
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+- Semantic HTML5 markup
+- CSS custom properties (variables)
+- Flexbox (for centering and layout)
+- Mobile-first workflow
+- Vanilla CSS (no preprocessors or frameworks)
 
-## Where to find everything
+### What I learned
+I'm a beginner in frontend development. Although I have some Python development experience, it didn't help much with this current project. At the beginning, I felt completely lost and almost wanted to give up. However, the first challenge in learning is right here - giving up is easy, but perseverance is more valuable. You could simply copy others' code, but that way you'll never truly learn. When encountering difficulties during learning, you can ask AI for help or refer to others' work, but always make sure to carefully think through the underlying principles.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+```html
+  <main class="qr-code">
+    <div class="qr-code-image">
+      <img src="images/image-qr-code.png" alt="QR code linking to Frontend Mentor website">
+    </div>
+    <div class="qr-code-text">
+      <h1 class="qr-code-text-title">Improve your front-end skills by building projects</h1>
+      <p class="qr-code-text-description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </main>
+```
+In this code, I learned about custom tags. This is the first time I've implemented an HTML snippet completely on my own without referring to others' work. Although it's very short, it still serves as a good starting point.
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+```css
+:root {
+    /* 颜色变量 */
+    --clr-slate-900: hsl(218, 44%, 22%);
+    --clr-slate-500: hsl(216, 15%, 48%);
+    --clr-slate-300: hsl(212, 45%, 89%);
+    --clr-white: hsl(0, 0%, 100%);
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+    /* 字体变量 */
+    --ff-outfit: 'Outfit', sans-serif;
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+    /* Text Preset 1 - Bold */
+    --tp1-size: 22px;
+    --tp1-line-height: 1.2;
+    --tp1-spacing: 0px;
+    --tp1-weight: bold;
 
-## Building your project
+    /* Text Preset 2 - Regular */
+    --tp2-size: 15px;
+    --tp2-line-height: 1.4;
+    --tp2-spacing: 0.2px;
+    --tp2-weight: regular;
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+    --space-500: 40px;
+    --space-300: 24px;
+    --space-200: 16px;
+}
+```
+I learned about CSS variables (custom properties) from studying [@vinibleik](https://github.com/vinibleik)'s implementation. Initially I was using plain CSS but encountered difficulties, so I started exploring community solutions to learn from them - not just copying blindly. Whenever I didn't understand something, I asked AI assistants until I fully grasped the concepts. Sometimes creating my own visual examples was the best way to learn.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+The CSS variables approach helped me:
+1. Better organize and maintain my styles
+2. Create consistent design tokens for colors, spacing and typography
+3. Make global changes more efficiently
+4. Improve readability of my CSS code
 
-## Deploying your project
+This was my first time using CSS variables in a real project, and I can see how powerful they are for building maintainable stylesheets.
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+### Continued development
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+I need to become more familiar with APIs and development workflows. For my first development experience, I need to strengthen my understanding of design specifications and insights into various design approaches. In the future, I should gradually implement these features using more modern methods, and continuously review and learn from them.
 
-## Create a custom `README.md`
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+### Useful resources
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- [A good solution](https://github.com/vinibleik/qr-code-component) - This helps me sort out my thoughts
+- [Cursor](https://www.cursor.com/) - A good tool for coding
 
-## Submitting your solution
+## Author
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- Github - [@Nydaym](https://github.com/Nydaym)
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+## Acknowledgments
 
-## Sharing your solution
+Thanks to the community for their help and for sharing their public solutions
 
-There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
